@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>心結文學社</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="心結文學社.長頸鹿 giraffe@koyuisha.com">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://koyuisha.com/myMusic">
+    <meta property="og:title" content="心結文學社-音樂分享">
+    <meta property="og:description" content="心結文學社-音樂分享">
+    <meta property="og:image" content="https://koyuisha.com/logo.png">
+    <link rel="shortcut icon" href="https://koyuisha.com/logo_icon.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="./main.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="./main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="comment">
+            <img class="logoimg" src="https://koyuisha.com/logo.png">
+            <div class="paramerDiv">
+                <label><span style="color: red;">*</span>歌曲名:</label><br>
+                <input placeholder="請輸入歌曲名" maxlength="100"
+                    oninput="javascript: this.value = checkLength(this,this.value,this.maxLength)">
+            </div>
+            <div class="paramerDiv">
+                <label><span style="color: red;">*</span>音樂連結:</label><br>
+                <input placeholder="請輸入音樂連結" maxlength="100"
+                    oninput="javascript: this.value = checkLength(this,this.value,this.maxLength)">
+            </div>
+            <div class="paramerDiv">
+                <label>歌手:</label><br>
+                <input placeholder="請輸入歌手名稱" maxlength="50"
+                    oninput="javascript: this.value = checkLength(this,this.value,this.maxLength)">
+            </div>
+            <div class="paramerDiv">
+                <label>作詞:</label><br>
+                <input placeholder="請輸入作詞者名稱" maxlength="50"
+                    oninput="javascript: this.value = checkLength(this,this.value,this.maxLength)">
+            </div>
+            <div class="paramerDiv">
+                <label>作曲:</label><br>
+                <input placeholder="請輸入作曲者名稱" maxlength="50"
+                    oninput="javascript: this.value = checkLength(this,this.value,this.maxLength)">
+            </div>
+            <div class="paramerDiv">
+                <label>風格類型:</label><br>
+                <input placeholder="請輸入風格類型" maxlength="50"
+                    oninput="javascript: this.value = checkLength(this,this.value,this.maxLength)">
+            </div>
+            <div class="paramerDiv">
+                <label>歌詞連結:</label><br>
+                <input placeholder="請輸入歌詞連結" maxlength="100"
+                    oninput="javascript: this.value = checkLength(this,this.value,this.maxLength)">
+            </div>
+        </div>
+        <button class="comment sendButton" onclick="send(this)">送出</button>
+    </div>
+</body>
+
+</html>
