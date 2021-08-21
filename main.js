@@ -73,7 +73,7 @@ function send(btn) {
     songLinkInput.value = "";
     layicLinkInput.value = "";
     if (response["status"] != null) {
-      if (response["status"] != 204) {
+      if (response["status"] == 204) {
         showSuccessAlert("送出成功")
       } else {
         showErrorAlert('發生錯誤，請稍後再試');
